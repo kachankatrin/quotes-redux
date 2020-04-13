@@ -24,7 +24,11 @@ class AllQuotes extends React.Component {
       <div>
         {this.props.quotes.quote && this.props.quotes.quote.map(item =>  <ListItem quote={item}/>)}
        
-          <CreatePages allPages={this.state.totalPages} currentPage={this.state.currentPage} handlePagination={this.handlePagination}/>
+          <CreatePages 
+                        allPages={this.state.totalPages} 
+                        currentPage={this.state.currentPage} 
+                        handlePagination={this.handlePagination}
+          />
        
       </div>
     )

@@ -11,7 +11,7 @@ class RandomQuotes extends React.Component {
   render() {
     return (
       <div>
-      <ListItem quote={this.props.ranQuotes.ranQuote}/>
+      <ListItem quote={this.props.quotes.ranQuote}/>
       </div>
     )
   }
@@ -19,7 +19,7 @@ class RandomQuotes extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    ranQuotes: state.ranQuotes
+    quotes: state.quotes
   }
 }
 
